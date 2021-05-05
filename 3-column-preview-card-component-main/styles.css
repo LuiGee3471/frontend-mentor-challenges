@@ -1,0 +1,123 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-size: 15px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    width: 63%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.car {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 33.3%;
+    padding: 2.5em 1em 3.5em 3em;
+}
+
+.heading {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    margin-bottom: 0.7em;
+}
+
+.paragraph {
+    padding-right: 2em;
+    margin-bottom: 5em;
+    line-height: 1.7em;
+    flex-grow: 2;
+}
+
+.deca {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+.orange {
+    color: hsl(31, 77%, 52%);
+}
+
+.cyan {
+    color: hsl(184, 100%, 22%);
+}
+
+.darkcyan {
+    color: hsl(179, 100%, 13%);
+}
+
+.lightgray {
+    color: hsl(0, 0%, 95%);
+}
+
+.transparent-white {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.bg-orange {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.bg-cyan {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.bg-darkcyan {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.button {
+    background-color: hsl(0, 0%, 95%);
+    padding: 0.9em 2em;
+    border-radius: 2em;
+    border: 2px solid transparent;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button:active {
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    outline: none;
+}
+
+.bg-orange .button:active {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.bg-cyan .button:active {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.bg-darkcyan .button:active {
+    background-color: hsl(179, 100%, 13%);
+}
+
+@media (max-width: 375px) {
+    html, body {
+        height: initial;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
+    .car {
+        width: 100%;
+    }
+
+    .paragraph {
+        margin-bottom: 1.5em;
+    }
+}
