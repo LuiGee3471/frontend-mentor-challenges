@@ -1,0 +1,73 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+html {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    width: 1400px;
+    font-size: 12px;
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 80%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    display: flex;
+    padding: 50px 100px 50px 0;
+}
+
+.image {
+    background-image: url(./images/bg-pattern-desktop.svg);
+}
+
+article {
+    display: inline-block;
+}
+
+.float-left {
+    float: left;
+}
+
+h2 {
+    font-weight: 400;
+    transition: 0.2s;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: hsl(240, 5%, 91%);
+    margin: 0;
+}
+
+.hidden {
+    opacity: 0;
+    max-height: 0;
+    margin: 0;
+}
+
+h2::after {
+    content: url(./images/icon-arrow-down.svg);
+    transition: 0.2s;
+    float: right;
+}
+
+h2:active {
+    color: hsl(14, 88%, 65%);
+}
+
+h2.active {
+    font-weight: 700;
+}
+
+h2.active::after {
+    transform: rotate(-180deg);
+}
