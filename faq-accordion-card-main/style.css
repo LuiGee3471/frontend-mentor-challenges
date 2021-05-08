@@ -24,13 +24,12 @@ body {
 }
 
 .container {
-    width: 60%;
+    width: 865px;
     background-color: white;
     border-radius: 20px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     display: flex;
     margin: auto;
-    overflow: hidden;
 }
 
 #faq {
@@ -41,7 +40,12 @@ body {
     height: 100%;
 }
 
+.overflow-hidden {
+    overflow: hidden;
+}
+
 .image {
+    position: relative;
     background-image: url(./images/bg-pattern-desktop.svg);
     background-position: left -570px bottom -200px;
     background-repeat: no-repeat;
@@ -53,7 +57,7 @@ body {
 .box {
     position: absolute;
     top: calc(50% - 45px);
-    left: 195px;
+    left: -95px;
 }
 
 .desktop {
@@ -124,4 +128,30 @@ h2.active::after {
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+@media (max-width: 430px) {
+    body {
+        min-height: 100vh;
+    }
+
+    .main {
+        width: 100vw;
+        background-size: cover;
+        padding-top: 100px;
+        padding-bottom: 200px;
+    }
+
+    .container {
+        width: 330px;
+        box-sizing: border-box;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #faq {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
 }
