@@ -7,12 +7,28 @@ article.addEventListener('click', onClickArticle);
 
 function onClickArticle(event) {
     const target = event.target;
-    if (target.tagName === 'H2') {
-        onClickQuestion(target);
+    if (target.tagName !== 'H2') {
+        return;
     }
+
+    if (target.classList.contains('active')) {
+        deactivateQuestion(target);
+    } else {
+        questions.forEach(question => {
+            deactivateQuestion(question);
+        });
+        activateQuestion(target);
+    }
+
+    
 }
 
-function onClickQuestion(question) {
-    question.classList.toggle('active');
-    question.nextElementSibling.classList.toggle('hidden');
+function activateQuestion(question) {
+    question.classList.add('active');
+    question.nextElementSibling.classList.remove('hidden');
+}
+
+function deactivateQuestion(question) {
+    question.classList.remove('active');
+    question.nextElementSibling.classList.add('hidden');
 }
