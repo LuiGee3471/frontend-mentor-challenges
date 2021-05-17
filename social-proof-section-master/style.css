@@ -1,0 +1,80 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-size: 15px;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.container {
+    width: 1440px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.buyers {
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    height: 265px;
+}
+
+.no-disc {
+    list-style-type: none;
+}
+
+.card {
+    border-radius: 10px;
+    padding: 1em 2em;
+    width: 350px;
+    height: 235px;
+    box-sizing: border-box;
+}
+
+.align-start {
+    align-self: flex-start;
+}
+
+.align-center {
+    align-self: center;
+}
+
+.align-end {
+    align-self: flex-end;
+}
+
+.buyer span {
+    display: block;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.bg-magenta {
+    background-color: hsl(300, 43%, 22%);
+}
+
+.primary-magenta {
+    color: hsl(300, 43%, 22%);
+}
+
+.primary-pink {
+    color: hsl(333, 80%, 67%);
+}
+
+.white {
+    color: hsl(0, 0%, 100%);
+}
+
+.dark-magenta {
+    color: hsl(303, 10%, 53%);
+}
+
+.light-magenta {
+    color: hsl(300, 24%, 96%);
+}
