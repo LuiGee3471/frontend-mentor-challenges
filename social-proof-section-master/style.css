@@ -2,6 +2,7 @@ html, body {
     height: 100%;
     margin: 0;
     font-size: 15px;
+    font-family: 'Spartan', sans-serif;
 }
 
 h1 {
@@ -10,6 +11,8 @@ h1 {
 
 .container {
     width: 1440px;
+    box-sizing: border-box;
+    padding: 130px 165px 100px;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -25,14 +28,15 @@ h1 {
 
 .no-disc {
     list-style-type: none;
+    font-size: 0.8em;
 }
 
 .card {
     border-radius: 10px;
-    padding: 1em 2em;
     width: 350px;
     height: 235px;
     box-sizing: border-box;
+    padding: 40px 40px 45px 32px;
 }
 
 .align-start {
@@ -47,8 +51,48 @@ h1 {
     align-self: flex-end;
 }
 
-.buyer span {
+.buyer {
+    height: 42px;
+}
+
+.buyer img {
+    float: left;
+    border-radius: 50%;
+    width: 42px;
+    margin-right: 25px;
+}
+
+.buyer::after {
+    content: "";
     display: block;
+    clear: both;
+}
+
+.name {
+    font-size: 1.1em;
+}
+
+.verified {
+    font-size: 1.1em;
+}
+
+.buyer-text {
+    height: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.buyer-text span {
+    text-align: left;
+}
+
+.card p {
+    line-height: 1.9em;
+    letter-spacing: 0.2px;
+    margin-top: 2em;
 }
 
 .bold {
