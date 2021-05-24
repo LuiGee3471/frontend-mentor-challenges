@@ -7,6 +7,7 @@ html, body {
 
 h1 {
     font-size: 3em;
+    margin: 0;
 }
 
 .container {
@@ -26,9 +27,43 @@ h1 {
     height: 265px;
 }
 
+.title {
+    width: 450px;
+}
+
 .no-disc {
     list-style-type: none;
     font-size: 0.8em;
+}
+
+.stars {
+    padding: 0;
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+}
+
+.stars li {
+    width: 450px;
+    height: 57px;
+    border-radius: 5px;
+    background-color: hsl(300, 24%, 96%);
+    font-size: 1.15em;
+    padding: 20px 35px;
+    box-sizing: border-box;
+}
+
+.stars li:not(:first-child) {
+    margin-top: 17px;
+}
+
+.stars li span {
+    vertical-align: middle;
+    height: 100%;
+}
+
+.stars li span:nth-child(2) {
+    margin-left: 35px;
 }
 
 .card {
@@ -76,6 +111,10 @@ h1 {
     font-size: 1.1em;
 }
 
+.five-star {
+    letter-spacing: 0.3em;
+}
+
 .buyer-text {
     height: 100%;
     min-height: 100%;
@@ -101,6 +140,10 @@ h1 {
 
 .bg-magenta {
     background-color: hsl(300, 43%, 22%);
+}
+
+.bg-light-magenta {
+    background-color: hsl(300, 24%, 96%);
 }
 
 .primary-magenta {
